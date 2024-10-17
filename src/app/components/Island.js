@@ -1,19 +1,17 @@
 import Image from "next/image";
 import React from "react";
+import IslandsContainer from "./IslandsContainer";
 
-function Island({ island }) {
+function Island({ island, handleClick }) {
   return (
-    <div className="Island">
+    <div className="Island" onClick={() => handleClick(island)}>
       <h3>{island.name}</h3>
       {/* YOU HAVE TO CHANGE THE VISITORS COUNT */}
+
       <p>Visitors 0</p>
-      <Image
-        src={island.img}
-        alt={island.name}
-        width="300"
-        height="300" />
+      <Image src={island.img} alt={island.name} width="300" height="300" />
     </div>
   );
 }
 
-export default Island
+export default Island;
