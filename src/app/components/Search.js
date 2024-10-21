@@ -1,4 +1,3 @@
-
 function Search({ handleChange }) {
   return (
     <input
@@ -6,7 +5,7 @@ function Search({ handleChange }) {
       placeholder="Search for an island"
       onChange={handleChange}
     />
-  )
+  );
 }
 
-export default Search
+export default Search;
