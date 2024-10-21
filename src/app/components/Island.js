@@ -4,7 +4,7 @@ import IslandsContainer from "./IslandsContainer";
 
 function Island({ island, handleClick }) {
   return (
-    <div className="Island" onClick={() => handleClick(island)}>
+    <div className="Island" onClick={() => handleClick(island1234)}>
       <h3>{island.name}</h3>
       {/* YOU HAVE TO CHANGE THE VISITORS COUNT */}
 
